@@ -110,24 +110,37 @@ body {
     right: 35px;
     }
   }
+  .row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px;
+  }
   .main {
-    float: left;
-    width: 60%;
-    padding: 0 20px;
+    flex-basis: 50%;
+    position: relative;
+    margin-left: 50px;
   }
   
   .right {
     background-color: #e5e5e5;
-    float: left;
-    width: 20%;
-    padding: 15px;
-    margin-top: 7px;
-    text-align: center;
+    position: relative;
+    flex-basis: 50%;
+    display: flex;
+    align-items: center;
   }
   
   @media only screen and (max-width: 620px) {
     /* For mobile phones: */
-    .main, .right {
-      width: 100%;
+    .row{
+      flex-direction: column;
+      margin: 50px o
+    }
+    .main{
+      flex-basis: 100%;
+      margin-bottom: 50px;
+    }
+    .right{
+      flex-basis: 100%;
     }
   }
