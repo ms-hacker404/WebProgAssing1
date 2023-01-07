@@ -5,37 +5,60 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="styles/index.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.cdnfonts.com/css/gt-walsheim" rel="stylesheet">
     </head>
     <body>
+      <div class = container>
         <div class="topnav" id="myTopnav">
+          <img src = "logo3.png" class = "logo">
+
+            <p> </p>
             <a href="#home" class="active">Home</a>
-            <a href="#news">Services</a>
-            <a href="#contact">Meal Planner</a>
-            <a href="#about">Contact Us</a>
+            <div class="dropdown">
+              <button class = "dropbtn">Services
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="#">Yoga</a>
+                <a href="#">Meditation</a>
+                <a href="#">Stretching</a>
+                <a href="#">Healthy Habits</a>
+              </div>
+            </div>
+            
+            <a href="#">Meal Planner</a>
+            <a href="#">Contact Us</a>
+          
             <a href="javascript:void(0);" class="icon" onclick="openNav()">
               <i class="fa fa-bars"></i>
             </a>
           </div>
           
           <div id="myNav" class="overlay">
+            
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <div class="overlay-content">
-            <a href="#home" class="active">Home</a>
-            <a href="#news">Services</a>
-            <a href="#contact">Meal Planner</a>
-            <a href="#about">Contact Us</a>
+            <a href="#" class="active">Home</a>
+            <a href="#">Yoga</a>
+            <a href="#">Meditation</a>
+            <a href="#">Stretching</a>
+            <a href="#">Healthy Habits</a>
+            <a href="#">Meal Planner</a>
+            <a href="#">Contact Us</a>
             </div>
           </div>
+        </div>
+          
+          
         
           <div class="row">
             <div class="main">
-              <h2>Lorum Ipsum</h2>
-              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+              <h2>We are LIFE</h2>
+              <p>Living It Fully Everyday to become a better YOU!<br>Join Us today. Bye, See ya soon! :)</p>
             </div>
         
             <div class="right">
-              <h2>About</h2>
-              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+              <img src = "cereal.jpg" class = "mainImg">
             </div>
           </div>
         
