@@ -1,12 +1,3 @@
-// const navbar = document.getElementsByClassName("topnav");
-// let top = navbar.offsetTop;
-// function stickynavbar() {
-//   if (window.scrollY >= top) {    
-//     navbar.classList.add('sticky');
-//   } else {
-//     navbar.classList.remove('sticky');    
-//   }
-// }
 window.addEventListener('scroll', stickynavbar);
 function myFunction() {
   var x = document.getElementById("myTopnav");
@@ -15,4 +6,11 @@ function myFunction() {
   } else {
     x.className = "topnav";
   }
+}
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
 }
