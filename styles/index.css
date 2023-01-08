@@ -181,6 +181,17 @@ body {
     flex-basis: 50%;
     position: relative;
   }
+  .main button{
+    background-color: #FF6767;
+    color: #fff;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 24px;
+    cursor: pointer;
+    font-weight: 550;
+    font-size: 15px;
+    
+  }
   
   .right {
     position: relative;
@@ -211,6 +222,7 @@ body {
     .mainImg{
       align-items: center;
     }
+    
   }
 
   html {
