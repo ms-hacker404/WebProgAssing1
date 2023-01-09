@@ -42,3 +42,36 @@ var swiper = new Swiper(".slide-container", {
     },
   },
 });
+
+
+var swiper = new Swiper(".slide-sum", {
+  slidesPerView: 5,
+  spaceBetween: 10,
+  sliderPerGroup: 5,
+  loopFillGroupWithBlank: true,
+  loop: false,
+  centerSlide: "true",
+  fade: "true",
+  grabCursor: "true",
+  autoplay: {
+    delay: 5000,
+  },
+
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+      
+    },
+    520: {
+      slidesPerView: 2,
+    
+    },
+    768: {
+      slidesPerView: 3,
+      
+    },
+    1000: {
+      slidesPerView: 5,
+    },
+  },
+});

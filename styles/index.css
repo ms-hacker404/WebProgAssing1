@@ -371,3 +371,49 @@ html {
   margin: 0 auto;
   padding: 0 25px;
 }
+
+/*--------------------------------*/
+.sumcontainer{
+  padding: 40px 0;
+}
+.sumBrief{
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 0 25px;
+}
+.slide-sum {
+  margin: 50px 40px;
+  overflow: hidden;
+}
+.card2 {
+  background: #F7D8D8;
+  border-radius: 8px;
+}
+
+.card2 .ima img {
+  object-fit: contain;
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+
+}
+.card2 .details {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 12px;
+  padding: 15px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #352727;
+}
+.bgHalf{
+  margin: 0;
+  background: linear-gradient(180deg, white 45%, #F7D8D8 0%);
+  width: 100%;
+  padding-left: 5%;
+  padding-right: 5%;
+  box-sizing: border-box;
+  overflow: hidden;
+}
