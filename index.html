@@ -4,12 +4,14 @@
       <title>LIFE</title>
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <link rel="stylesheet" type="text/css" href="styles/index.css">
+      <link rel="stylesheet" href="styles/swiper-bundle.min.css" />
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
       <link href="https://fonts.cdnfonts.com/css/gt-walsheim" rel="stylesheet">
     </head>
 
     <body>
       <div class = container>
+        
         <div class="topnav" id="myTopnav">
           <img src = "logo.png" class = "logo">
           <nav>
@@ -35,6 +37,7 @@
             <a href="#">Contact Us</a>
           </div>
         </div>
+      
 
         <div class="row">
           <div class="main">
@@ -77,17 +80,67 @@
             <img src = "mockup.png" class = "mockupImg">
           </div>
         </div>
+      
+        <div class="swicontainer swiper">
+          <div class="servicesBrief">
+            <h2>Services</h2>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+          </div>
+          <div class="slide-container">
+            <div class="card-wrapper swiper-wrapper">
+              <div class="card swiper-slide">
+                <div class="image-box">
+                  <a href = "#">
+                  <img src = "images/yoga.jpg" alt = "a woman performing yoga asana"></a>
+                </div>
+                <div class="activity-details">
+                  <p>Yoga</p>
+                </div>
+              </div>
 
+              <div class="card swiper-slide">
+                <div class="image-box">
+                  <a href = "#">
+                  <img src = "images/meditation.jpg" alt = "a woman meditating"></a>
+                </div>
+                <div class="activity-details">
+                  <p>Meditation</p>
+                </div>
+              </div>
 
+              <div class="card swiper-slide">
+                <div class="image-box">
+                  <a href = "#">
+                  <img src = "images/stretching.jpg" alt = "a woman performing whole body stretching"></a>
+                </div>
+                <div class="activity-details">
+                  <p>Stretching</p>
+                </div>
+              </div>
+
+              <div class="card swiper-slide">
+                <div class="image-box">
+                  <a href = "#">
+                  <img src = "images/food.png" alt = "demonstration of healthy foods like acaii bowl and blueberries"></a>
+                </div>
+                <div class="activity-details">
+                  <p>Healthy Habits</p>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        <div class="swiper-button-next swiper-navBtn"></div>
+        <div class="swiper-button-prev swiper-navBtn"></div>
+        </div>
+
+        <!-- ------------------------------------------------------------ -->
+                
+      
       </div>
           
           
-        
-      
-        
-        
-          
-          
+      <script src="swiper-bundle.min.js"></script>
       <script src="index.js"></script>
     </body>
 </html>

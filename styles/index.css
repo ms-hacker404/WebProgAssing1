@@ -11,10 +11,12 @@
   box-sizing: border-box;
   overflow: hidden;
 }
+
 .topnav{
   width: 100%;
   display: flex;
   align-items: center;
+  
 }
 .logo{
   width: 50px;
@@ -179,8 +181,12 @@ nav ul li a.active{
     flex-basis: 100%;
     justify-content: center;
     align-items: center;
-
   }
+  .main button{
+    position: sticky;
+    top: 0px;
+  }
+  
 }
 
 
@@ -304,4 +310,64 @@ html {
     align-items: center;
 
   }
+}
+
+
+/*--------------------------------*/
+.swicontainer{
+  padding: 40px 0;
+  
+}
+.slide-container {
+  margin: 50px 40px;
+  overflow: hidden;
+}
+.card {
+  background: white;
+  border-radius: 8px;
+}
+.card .image-box {
+  height: 200px;
+}
+.card .image-box img {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px 8px 8px 8px;
+  opacity: 80%;
+}
+.card .activity-details {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 12px;
+  padding: 15px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #352727;
+}
+
+.swiper-button-prev, .swiper-button-next {
+  --swiper-navigation-size: 20px;
+}
+
+.swiper-pagination-bullet, .swiper-button-prev, .swiper-button-next  {
+  --swiper-theme-color: white;
+}
+@media screen and (max-width: 768px) {
+  .swiper-navBtn {
+    display:block;
+  }
+  .swiper-button-prev, .swiper-button-next {
+    --swiper-navigation-color: #352727; 
+    --swiper-navigation-size: 18px;
+  }
+  
+  .swiper-pagination-bullet {
+    --swiper-theme-color: #352727;
+  }
+}
+.servicesBrief{
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 0 25px;
 }
