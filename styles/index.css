@@ -447,7 +447,6 @@ html {
 .sumBrief{
   text-align: center;
   margin: 0 auto;
-  padding: 25px;
   padding-top: 50px;
 }
 .sumBrief h2{
@@ -505,6 +504,7 @@ html {
   }
   @media screen and (max-width: 768px) {
     .sumBrief{
+      padding:25px;
       padding-top: 0;
     }
     .sumcontainer{
