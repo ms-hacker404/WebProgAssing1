@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>Contact Us | LIFE</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" type="text/css" href="styles/contact.css">
+
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+      <link href="https://fonts.cdnfonts.com/css/gt-walsheim" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class = containernav>
+
+        <!-- navigation panel with logo and other nav bar options-->
+            <header>
+            <div class="topnav" id="myTopnav">
+                <img src = "images/logo.png" class = "logo">
+                <nav>
+                <ul>
+                    <li><a href="#" >Home</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Meal Planner</a></li>
+                    <li><a href="#" class="active">Contact Us</a></li>
+                </ul>
+            </nav>
+                
+                <a href="javascript:void(0);" class="icon" onclick="openNav()">
+                <i class="fa fa-bars"></i>
+                </a>
+            </div>
+                
+            <div id="myNav" class="overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="overlay-content">
+                <a href="#">Home</a>
+                <a href="#">Services</a>
+                <a href="#">Meal Planner</a>
+                <a href="#" class="active">Contact Us</a>
+                </div>
+            </div>
+            </header>
+
+            <div class="container">
+                <div class="content">
+                  <div class="left-side">
+                    <div class="address details">
+                      <i class="fas fa-map-marker-alt"></i>
+                      <div class="topic">Address</div>
+                      <div class="text-one">Room 80.02.02</div>
+                      <div class="text-two">RMIT University</div>
+                    </div>
+                    <div class="phone details">
+                      <i class="fas fa-phone-alt"></i>
+                      <div class="topic">Phone</div>
+                      <div class="text-one">+61 466 123456</div>
+                      <div class="text-two">+61 472 123456</div>
+                    </div>
+                    <div class="email details">
+                      <i class="fas fa-envelope"></i>
+                      <div class="topic">Email</div>
+                      <div class="text-one">s3885529@student.rmit.edu.au</div>
+                      <div class="text-two">s3874546@student.rmit.edu.au</div>
+                    </div>
+                  </div>
+                  <div class="right-side">
+                    <div class="topic-text">Send us a message</div>
+                    <br>
+                    <p>If you have any enquiry regarding our website do contact us via this form or other preferred communication options. It's our pleasure to help you.</p>
+                    <br>
+                    <form action="#">
+                    <div class="input-box">
+                      <input type="text" placeholder="Enter your name">
+                    </div>
+                    <div class="input-box">
+                      <input type="text" placeholder="Enter your email">
+                    </div>
+                    <div class="input-box message-box">
+                      <textarea placeholder="Enter your message"></textarea>
+                    </div>
+                    <div class="button">
+                      <input type="button" value="Send" >
+                    </div>
+                  </form>
+                </div>
+                </div>
+              </div>
+        </div>
+
+
+        <script src="js/contact.js"></script>
+    </body>
+</html>
