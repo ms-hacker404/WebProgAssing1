@@ -52,34 +52,52 @@ nav ul li a.active{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 100px 0;
+  min-height: 70vh;
 }
 .main{
   flex-basis: 50%;
   position: relative;
   margin-left: 50px;
 }
-.main h2{
-  font-size: 54px;
+.main h3{
+  font-size: 45px;
+}
+.main .para1{
+  font-size: 22px;
+  padding-top: 20px;
+}
+.main .para2{
+  font-size: 22px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 .main button{
   background-color: #FF6767;
   color: #fff;
   border: none;
-  padding: 12px 30px;
+  padding: 15px 35px;
   border-radius: 24px;
   cursor: pointer;
   font-weight: 550;
   font-size: 15px;
+  box-shadow: gray 0 2px 2px 0;
+}
+.main button:hover{
+  background-color: #352727;
+  color: #FF6767;
+  font-weight: 600;
+  box-shadow: gray 0 2px 2px 0;
+  padding: 15px 35px;
 }
 .right{
   position: relative;
   flex-basis: 50%;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 .right .mainImg{
-  width: 80%;
+  width: 75%;
 }
 @media screen and (max-width: 600px) {
   nav ul {
@@ -173,8 +191,6 @@ nav ul li a.active{
   .main{
     margin-left: 0px;
     flex-basis: 100%;
-    margin-bottom: 50px;
-    
   }
   .right{
     margin-bottom: 50px;
@@ -182,9 +198,17 @@ nav ul li a.active{
     justify-content: center;
     align-items: center;
   }
-  .main button{
-    position: sticky;
-    top: 0px;
+  .main h3{
+    font-size: 37px;
+  }
+  .main .para1{
+    font-size: 18px;
+    padding-top: 20px;
+  }
+  .main .para2{
+    font-size: 18px;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
   
 }
@@ -286,9 +310,17 @@ html {
   flex-basis: 50%;
   display: flex;
   align-items: center;
+  animation: fadeIn 5s;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 }
 .img2 .mockupImg{
   width: 80%;
+  
+  
 }
 @media only screen and (max-width: 800px) {
   /* For mobile phones: */
