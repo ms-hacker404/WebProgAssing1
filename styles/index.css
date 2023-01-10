@@ -5,7 +5,6 @@
   }
 .container{
   width: 100%;
-  min-height: 100vh;
   padding-left: 5%;
   padding-right: 5%;
   box-sizing: border-box;
@@ -185,7 +184,7 @@ nav ul li a.active{
   /* For mobile phones: */
   .row{
     flex-direction: column;
-    margin: 50px 0;
+    margin: 50px 0 0 0;
     text-align: center;
   }
   .main{
@@ -193,7 +192,6 @@ nav ul li a.active{
     flex-basis: 100%;
   }
   .right{
-    margin-bottom: 50px;
     flex-basis: 100%;
     justify-content: center;
     align-items: center;
@@ -224,6 +222,7 @@ html {
   width: 24px;
   height: 24px;
   margin: 0px auto;
+  padding-bottom: 20px;
 }
 .chevron {
   position: absolute;
@@ -282,11 +281,7 @@ html {
     opacity: 1;
   }
 }
-#toscroll{
-    max-width: 680px;
-    margin: 120px auto;
-    padding: 25px;
-}
+
 
 
 /*------------------------------------*/
@@ -294,23 +289,29 @@ html {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 100px 0;
+  margin: 50px 30px 50px 50px;
+  padding-top: 20px;
 }
 .text2{
-  flex-basis: 50%;
+  flex-basis: 60%;
   position: relative;
   margin-left: 50px;
 }
-.text2 h2{
-  font-size: 54px;
+.text2 h3{
+  font-size: 40px;
+}
+.text2 p{
+  padding-top: 20px;
+  font-size: 20px;
 }
 
 .img2{
   position: relative;
-  flex-basis: 50%;
+  flex-basis: 40%;
   display: flex;
   align-items: center;
   animation: fadeIn 5s;
+  align-items: center;
 }
 
 @keyframes fadeIn {
@@ -328,6 +329,8 @@ html {
     flex-direction: column;
     margin: 50px 0;
     text-align: center;
+    align-items: center;
+    padding: 20px;
   }
   .text2{
     margin-left: 0px;
@@ -335,11 +338,19 @@ html {
     margin-bottom: 50px;
     
   }
+  .text2 h3{
+    font-size: 30px;
+  }
+  .text2 p{
+    font-size: 18px;
+  }
   .img2{
     margin-bottom: 50px;
     flex-basis: 100%;
     justify-content: center;
     align-items: center;
+    display: flex;
+  
 
   }
 }
@@ -355,7 +366,7 @@ html {
   overflow: hidden;
 }
 .card {
-  background: white;
+  background: #352727;
   border-radius: 8px;
 }
 .card .image-box {
@@ -373,24 +384,25 @@ html {
   justify-content: center;
   column-gap: 12px;
   padding: 15px;
-  font-size: 18px;
-  font-weight: bold;
-  color: #352727;
+  font-size: 20px;
+  font-weight: 500;
+  color: rgb(253, 234, 211);
 }
 
 .swiper-button-prev, .swiper-button-next {
   --swiper-navigation-size: 20px;
+  
 }
 
 .swiper-pagination-bullet, .swiper-button-prev, .swiper-button-next  {
-  --swiper-theme-color: white;
+  --swiper-theme-color: #352727;
 }
 @media screen and (max-width: 768px) {
   .swiper-navBtn {
     display:block;
   }
   .swiper-button-prev, .swiper-button-next {
-    --swiper-navigation-color: #352727; 
+    --swiper-navigation-color: white; 
     --swiper-navigation-size: 18px;
   }
   
@@ -399,9 +411,33 @@ html {
   }
 }
 .servicesBrief{
-  max-width: 680px;
+  max-width: 800px;
   margin: 0 auto;
   padding: 0 25px;
+  padding-top: 20px;
+  text-align: center;
+  animation: fadeIn 3s;
+  margin-top: 50px;
+  color:rgb(253, 234, 211);
+  
+}
+.servicesBrief h2{
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+.servicesBrief p{
+  font-size: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .servicesBrief h2{
+    font-size: 25px;
+    margin-bottom: 25px;
+  }
+  .servicesBrief p{
+    font-size: 18px;
+  }
+  
 }
 
 /*--------------------------------*/
@@ -409,9 +445,13 @@ html {
   padding: 40px 0;
 }
 .sumBrief{
-  max-width: 680px;
+  text-align: center;
   margin: 0 auto;
-  padding: 0 25px;
+  padding: 25px;
+  padding-top: 50px;
+}
+.sumBrief h2{
+  font-size: 35px;
 }
 .slide-sum {
   margin: 50px 40px;
@@ -431,21 +471,46 @@ html {
 
 }
 .card2 .details {
-  display: flex;
   align-items: center;
   justify-content: center;
   column-gap: 12px;
   padding: 15px;
   font-size: 18px;
-  font-weight: bold;
   color: #352727;
+  text-align: center;
+}
+.card2 .details .headings{
+  font-weight: bold;
 }
 .bgHalf{
   margin: 0;
-  background: linear-gradient(180deg, white 45%, #F7D8D8 0%);
+  background: linear-gradient(180deg, white 39%, #F7D8D8 0%);
   width: 100%;
   padding-left: 5%;
   padding-right: 5%;
   box-sizing: border-box;
   overflow: hidden;
+}
+
+.bg{
+    margin: 0;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background: #352727;
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+  @media screen and (max-width: 768px) {
+    .sumBrief{
+      padding-top: 0;
+    }
+    .sumcontainer{
+      padding-top: 0;
+    }
+    .sumBrief h2{
+      font-size: 30px;
+    }
 }

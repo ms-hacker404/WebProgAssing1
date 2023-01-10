@@ -46,7 +46,7 @@ var swiper = new Swiper(".slide-container", {
 
 var swiper = new Swiper(".slide-sum", {
   slidesPerView: 5,
-  spaceBetween: 10,
+  spaceBetween: 0,
   sliderPerGroup: 5,
   loopFillGroupWithBlank: true,
   loop: false,
@@ -54,7 +54,7 @@ var swiper = new Swiper(".slide-sum", {
   fade: "true",
   grabCursor: "true",
   autoplay: {
-    delay: 5000,
+    delay: 4000,
   },
 
   breakpoints: {
