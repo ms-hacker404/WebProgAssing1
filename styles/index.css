@@ -521,7 +521,7 @@ footer{
   left: 0;
   right: 0;
   height: auto;
-  width: 100vw;
+  box-sizing: border-box;
   color: white;
   
 }
