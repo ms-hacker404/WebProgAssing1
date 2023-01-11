@@ -69,23 +69,26 @@
                     <br>
                     <p>If you have any enquiry regarding our website do contact us via this form or other preferred communication options. It's our pleasure to help you.</p>
                     <br>
-                    <form action="#">
+                    <form id = "contact_form" onsubmit="return checkForm()" method = "post" action="submitted.html">
                     <div class="input-box">
                         <label for="">Name</label>
-                        <input type="text" placeholder="Enter your name" required>
+                        <input name = "fullname" id="fullname" type="text" placeholder="Enter your full name" required>
+                        
                     </div>
 
                     <div class="input-box">
                         <label for="">Email</label>
-                        <input type="email" placeholder="Enter your email" required>
-                    </div>
+                        <input name = "email" id = "email" type="email" placeholder="Enter your email" required>
+                        
+                      </div>
 
                     <div class="input-box message-box">
                         <label for="">Message</label>
-                        <textarea placeholder="Enter your message" required></textarea>
-                    </div>
+                        <textarea name = "message" id = "message" placeholder="Enter your message" required></textarea>
+                       
+                      </div>
                     <div class="button">
-                      <input type="button" value="Send" >
+                      <input id = "contact_submit" type="submit" value="Send" >
                     </div>
                   </form>
                 </div>

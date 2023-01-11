@@ -221,7 +221,7 @@ nav ul li a.active{
     display: inline-block;
     margin-top: 12px;
   }
-  .right-side .button input[type="button"]{
+  .right-side .button input[type="submit"]{
     color: #fff;
     font-size: 18px;
     outline: none;
@@ -235,7 +235,7 @@ nav ul li a.active{
     font-size: 17px;
     box-shadow: gray 0 2px 2px 0;
   }
-  .button input[type="button"]:hover{
+  .button input[type="submit"]:hover{
     background: #352727;
   }
   
@@ -277,7 +277,7 @@ nav ul li a.active{
    .container .content .right-side p{
     text-align: center;
    }
-   .container .content .right-side .button{
+   .container .content .right-side #contact_submit{
     margin-left: 30%;
    }
   }
