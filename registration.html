@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>Registration | LIFE</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" type="text/css" href="styles/registration.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link href="https://fonts.cdnfonts.com/css/gt-walsheim" rel="stylesheet">
+    </head>
+
+
+    <body>
+        <div class = containernav>
+
+        <!-- navigation panel with logo and other nav bar options-->
+            <header>
+                <div class="topnav" id="myTopnav">
+                    <img src = "images/logo.png" class = "logo">
+                    <nav>
+                    <ul>
+                        <li><a href="#" class="active">Home</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Meal Planner</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </nav>
+                    
+                    <a href="javascript:void(0);" class="icon" onclick="openNav()">
+                    <i class="fa fa-bars"></i>
+                    </a>
+                </div>
+                    
+                <div id="myNav" class="overlay">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <div class="overlay-content">
+                        <a href="#" class="active">Home</a>
+                        <a href="#">Services</a>
+                        <a href="#">Meal Planner</a>
+                        <a href="#">Contact Us</a>
+                    </div>
+                </div>
+            </header>
+        </div>
+
+
+        <div class="container">
+            <form autocomplete="off">
+              <h4>Register With Us</h4>
+
+              <div class="input-section">
+                <label>First Name <span class="required-color">*</span></label>
+                <input
+                  type="text"
+                  placeholder="Enter First Name"
+                  id="first-name-input"
+                  maxlength="30"
+                  required/>
+                <span id="first-name-error" class="hide required-color error-message">Invalid Input</span>
+                <span id="empty-first-name" class="hide required-color error-message">First Name Cannot Be Empty</span>
+                <span id = "capital-first-name" class = "hide required-color error-message">First letter should be capital</span> 
+              </div>
+
+              <div class="input-section">
+                <label>Last Name <span class="required-color">*</span></label>
+                <input
+                  type="text "
+                  placeholder="Enter Last Name"
+                  id="last-name-input"
+                  maxlength="30"
+                  required/>
+                <span id="last-name-error" class="hide required-color error-message">Invalid Input</span>
+                <span id="empty-last-name" class="hide required-color error-message">Last Name Cannot Be Empty</span>
+                <span id = "capital-last-name" class = "hide required-color error-message">First letter should be capital</span> 
+              </div>
+      
+              <div class="input-section">
+                <label>Email <span class="required-color">*</span></label>
+                <input 
+                type="email" 
+                placeholder="Enter Email" 
+                id="email" 
+                required />
+                <span id="email-error" class="hide required-color error-message">Invalid Email</span>
+                <span id="empty-email" class="hide required-color error-message">Email Cannot Be Empty</span>
+              </div>
+
+              <div class="input-section">
+                <label>Confirm Email <span class="required-color">*</span></label>
+                <input 
+                type="email" 
+                placeholder="Enter Email again" 
+                id="verify-email" 
+                required />
+                <span id="verify-email-error" class="hide required-color error-message">Email doesn't match the above email</span>
+                <span id="empty-verify-email" class="hide required-color error-message">This field Cannot Be Empty</span>
+              </div>
+      
+              <div class="input-section">
+                <label>Phone <span class="required-color">*</span></label>
+                <span class = "ext">+61</span><input
+                  type="text"
+                  placeholder="Enter Phone Number"
+                  id="phone"
+                  required/>
+                <span id="phone-error" class="hide required-color error-message">Phone Number should start with 4 and have 10 digits</span>
+                <span id="empty-phone" class="hide required-color error-message">Phone cannot be empty</span>
+              </div>
+
+              <div class="input-section">
+                <label>Birth Year <span class="required-color">*</span></label>
+                <input
+                type = "year" 
+                id="birthyear" 
+                min="1913" value="2023"
+                required>
+                <span id="empty-birthyear" class="hide required-color error-message">This field Cannot Be Empty</span>
+              </div>
+      
+              <div class="input-section">
+                <label>Student Status <span class="required-color">*</span></label>
+                
+                <input 
+                type="radio" 
+                id="studying" 
+                name = "studentStatus"
+                value = "Studying"
+                required>
+                <label for="studying">Studying</label><br>
+                <input 
+                type="radio" 
+                id="notStudying" 
+                name = "studentStatus"
+                value = "notStudying"
+                required>
+                <label for="notStudying">Not Studying</label><br>
+                <span id="email-error" class="hide required-color error-message">Invalid Email</span>
+                <span id="empty-email" class="hide required-color error-message">Email Cannot Be Empty</span>
+              </div>
+
+              <div class="input-section">
+                <label>Password <span class="required-color">*</span></label>
+                <input
+                  type="password"
+                  placeholder="Enter Password"
+                  id="password"
+                  required
+                />
+                <span id="password-error" class="hide required-color error-message">
+                  Passwords Should Have Letter, Special symbols, Numbers And Length >=
+                  8
+                </span>
+                <span id="empty-password" class="hide required-color error-message">
+                  Password Cannot Be Empty
+                </span>
+              </div>
+      
+              <div class="input-section">
+                <label>Confirm Password <span class="required-color">*</span></label>
+                <input
+                  type="password"
+                  id="verify-password"
+                  placeholder="Confirm Password"
+                  required
+                />
+                <span
+                  id="verify-password-error"
+                  class="hide required-color error-message"
+                  >Should Be Same As Previous Password</span
+                >
+                <span
+                  id="empty-verify-password"
+                  class="hide required-color error-message"
+                  >Password Cannot Be Empty</span
+                >
+              </div>
+              <button id="submit-button">Signup</button>
+            </form>
+          </div>
+
+        <script src="js/registration.js"></script>
+    </body>
+</html>
