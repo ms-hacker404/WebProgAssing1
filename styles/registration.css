@@ -219,8 +219,9 @@ select{
   }
   button:hover{
     background-color: #352727;
-    color: wheat;
+    color: #FF6767;
     box-shadow: gray 0 2px 2px 0;
+    font-weight: 600;
   }
   .required-color {
     color: #ff4747;
