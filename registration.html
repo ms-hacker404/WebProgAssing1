@@ -96,6 +96,7 @@
                 <span id="empty-verify-email" class="hide required-color error-message">This field Cannot Be Empty</span>
               </div>
       
+              
               <div class="input-section">
                 <label>Phone <span class="required-color">*</span></label>
                 <span class = "ext">+61</span><input
@@ -107,16 +108,17 @@
                 <span id="empty-phone" class="hide required-color error-message">Phone cannot be empty</span>
               </div>
 
+             
               <div class="input-section">
                 <label>Birth Year <span class="required-color">*</span></label>
-                <input
-                type = "year" 
-                id="birthyear" 
-                min="1913" value="2023"
-                required>
+                <select 
+                name="birthyear" 
+                id="birthyear"
+                required></select>
                 <span id="empty-birthyear" class="hide required-color error-message">This field Cannot Be Empty</span>
+                <span id="limit-birthyear" class="hide required-color error-message">Age must be at least 16 years</span>
               </div>
-      
+              
               <div class="input-section">
                 <label>Student Status <span class="required-color">*</span></label>
                 
@@ -125,17 +127,40 @@
                 id="studying" 
                 name = "studentStatus"
                 value = "Studying"
-                required>
-                <label for="studying">Studying</label><br>
+                required/>
+                <label for="studying" id = "studying-label">Studying</label><br>
                 <input 
                 type="radio" 
                 id="notStudying" 
                 name = "studentStatus"
-                value = "notStudying"
-                required>
-                <label for="notStudying">Not Studying</label><br>
-                <span id="email-error" class="hide required-color error-message">Invalid Email</span>
-                <span id="empty-email" class="hide required-color error-message">Email Cannot Be Empty</span>
+                value = "notStudying">
+                <label for="notStudying" id = "not-studying-label">Not Studying</label><br>
+                <span id="student-status-error" class="hide required-color error-message">Choice unselected</span>
+              </div>
+
+              <div class="input-section">
+                <label>Employment Status <span class="required-color">*</span></label>
+                
+                <input 
+                type="radio" 
+                id="employed" 
+                name = "employmentStatus"
+                value = "Employed"
+                required/>
+                <label for="employed" id = "employment-label">Employed</label><br>
+                <input 
+                type="radio" 
+                id="seeking" 
+                name = "employmentStatus"
+                value = "seeking">
+                <label for="seeking" id = "seeking-label">Seeking</label><br>
+                <input 
+                type="radio" 
+                id="other" 
+                name = "employmentStatus"
+                value = "other">
+                <label for="other" id = "other-label">Other</label><br>
+                <span id="employment-status-error" class="hide required-color error-message">Choice unselected</span>
               </div>
 
               <div class="input-section">
@@ -144,39 +169,39 @@
                   type="password"
                   placeholder="Enter Password"
                   id="password"
-                  required
-                />
-                <span id="password-error" class="hide required-color error-message">
-                  Passwords Should Have Letter, Special symbols, Numbers And Length >=
-                  8
-                </span>
-                <span id="empty-password" class="hide required-color error-message">
-                  Password Cannot Be Empty
-                </span>
+                  required/>
+                <span id="password-error" class="hide required-color error-message">Passwords Should Have at least 6 characters total, including at least 1 number and 1 letter</span>
+                <span id="empty-password" class="hide required-color error-message">Password Cannot Be Empty</span>
               </div>
       
-              <div class="input-section">
-                <label>Confirm Password <span class="required-color">*</span></label>
-                <input
-                  type="password"
-                  id="verify-password"
-                  placeholder="Confirm Password"
-                  required
-                />
-                <span
-                  id="verify-password-error"
-                  class="hide required-color error-message"
-                  >Should Be Same As Previous Password</span
-                >
-                <span
-                  id="empty-verify-password"
-                  class="hide required-color error-message"
-                  >Password Cannot Be Empty</span
-                >
-              </div>
+              
               <button id="submit-button">Signup</button>
             </form>
           </div>
+
+          <footer>
+            <div class="footer-content">
+                <h3>LIFE for A Better You</h3>
+                <p>Use LIFE to transform you into a better and healthier version of you using yoga, meditation, stretching and healthy eating habits</p>
+                <ul class="socials">
+                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa fa-envelope"></i></a></li>
+                    <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                    <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+                </ul>
+            </div>
+            <div class="footer-bottom">
+                        <div class="footer-menu">
+                          <ul class="f-menu">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="/service.html">Service</a></li>
+                            <li><a href="">Healthy Eating</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
+                          </ul>
+                        </div>
+                      <p>copyright &copy; <a href="#">Web Programming 2023</a>  </p>
+            </div>
+          </footer>
 
         <script src="js/registration.js"></script>
     </body>

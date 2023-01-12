@@ -14,6 +14,27 @@ function myFunction() {
     document.getElementById("myNav").style.width = "0%";
   }
 
+const yearSelect = document.getElementById("birthyear");
+function populateYears(){
+  //Get the current year as a number
+  let year = new Date().getFullYear();
+  //Make the previous 100 years be an option
+  for(let i = 0; i < 111; i++){
+      const option = document.createElement("option");
+      option.textContent = year - i;
+      yearSelect.appendChild(option);
+  }
+}
+
+populateYears();
+
+yearSelect.onchange = function() {
+  populateDays(yearSelect.value);
+}
+let emptyBirthyearError = document.getElementById("empty-birthyear");
+let limitBirthyearError = document.getElementById("limit-birthyear")
+
+
   //First Name
 let firstNameInput = document.getElementById("first-name-input");
 let firstNameError = document.getElementById("first-name-error");
@@ -40,6 +61,14 @@ let emptyEmailError = document.getElementById("empty-email");
 let verifyEmailInput = document.getElementById("verify-email");
 let verifyEmailError = document.getElementById("verify-email-error");
 let emptyVerifyEmailError = document.getElementById("empty-verify-password");
+
+//radio buttons - student status
+let studentStatus = document.querySelector('input[name="studentStatus"]:checked')  
+let studentStatusError = document.getElementById("student-status-error")
+
+// radio buttons - employement status
+let employmentStatus = document.querySelector('input[name="employmentStatus"]:checked')  
+let employmentStatusError = document.getElementById("employment-status-error")
 
 //Password
 let passwordInput = document.getElementById("password");
@@ -76,8 +105,8 @@ const lastnameVerify = (lname) => {
 //Password Verification
 const passwordVerify = (password) => {
   const regex =
-    /^(?=.+[a-z])(?=.+[A-Z])(?=.+[0-9])(?=.+[\$\%\^\&\!@\#\*\(\)\+\=`~\?\>\<])/;
-  return regex.test(password) && password.length >= 8;
+    /^(?=.+[(a-z)(A-Z)])(?=.+[0-9])(?=.+[\$\%\^\&\!@\#\*\(\)\+\=`~\?\>\<])/;
+  return regex.test(password) && password.length >= 6;
 };
 
 //Text verification (if input contains only text)
@@ -189,6 +218,7 @@ emailInput.addEventListener("input", () => {
     emptyUpdate(emailInput, emptyEmailError, emailError);
   }
 });
+
 //Verify email
 verifyEmailInput.addEventListener("input", () => {
     if (verifyEmailInput.value === emailInput.value) {
@@ -199,6 +229,28 @@ verifyEmailInput.addEventListener("input", () => {
       emptyUpdate(emailInput, emptyVerifyEmailError, verifyEmailError);
     }
   });
+
+//birthyear
+yearSelect.addEventListener("input", () => {
+  if ((yearSelect.value) <= 2007) {
+    limitBirthyearError.classList.add("hide");
+      validInput(yearSelect);
+  } else{
+    errorUpdate(yearSelect, limitBirthyearError);
+  }
+});
+
+//student status
+if (studentStatus!=null){
+  studentStatusError.classList.add("hide");
+  validInput(studentStatus);
+}
+
+//student status
+if (employmentStatus!=null){
+  employmentStatusError.classList.add("hide");
+  validInput(employmentStatus);
+}
 
 //Password
 passwordInput.addEventListener("input", () => {
@@ -211,16 +263,6 @@ passwordInput.addEventListener("input", () => {
   }
 });
 
-//Verify password
-verifyPasswordInput.addEventListener("input", () => {
-  if (verifyPasswordInput.value === passwordInput.value) {
-    verifyPasswordError.classList.add("hide");
-    validInput(verifyPasswordInput);
-  } else {
-    errorUpdate(verifyPasswordInput, verifyPasswordError);
-    emptyUpdate(passwordInput, emptyVerifyPasswordError, verifyPasswordError);
-  }
-});
 
 //Submit button
 submitButton.addEventListener("click", () => {

@@ -132,7 +132,6 @@ nav ul li a.active{
 }
 
 .container {
-    width: 90vw;
     max-width: 600px;
     padding: 2em 1.5em;
     background-color: white;
@@ -141,19 +140,42 @@ nav ul li a.active{
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   }
   h4 {
-    font-size: 1.5em;
+    font-size: 2em;
     color: #FF6767;
     padding-bottom: 20px;
   }
   .input-section {
-    margin: 0.5em 0;
+    margin: 0.5em 1em 0.5em 0;
   }
+  
 .input-section .ext {
     float: left;
     width: 40px;
     padding-top: 12px;
-
 }
+.input-section #birthyear{
+  display: block;
+}
+select{
+  padding:5px;
+  border-radius: 0.2em;
+}
+.input-section #studying, .input-section #notStudying{
+  display: inline;
+  width: 5%;
+}
+.input-section #not-studying-label, .input-section #studying-label{
+  display: inline;
+  width: 10%;
+ }
+ .input-section #employed, .input-section #seeking, .input-section #other{
+  display: inline;
+  width: 5%;
+}
+.input-section #employment-label, .input-section #seeking-label, .input-section #other-label{
+  display: inline;
+  width: 10%;
+ }
   label,
   .error-message {
     display: block;
@@ -169,6 +191,7 @@ nav ul li a.active{
   #phone{
     width: 50%;
   }
+
   input,
   button {
     display: block;
@@ -184,11 +207,20 @@ nav ul li a.active{
   }
   button {
     font-size: 1em;
-    background-color: #3164ff;
+   width: 30%;
+   margin: 0 auto;
+   border-radius: 20px;
+    background-color: #FF6767;
     border: none;
     color: #ffffff;
     padding: 0.8em 0;
     margin-top: 2em;
+    box-shadow: gray 0 2px 2px 0;
+  }
+  button:hover{
+    background-color: #352727;
+    color: wheat;
+    box-shadow: gray 0 2px 2px 0;
   }
   .required-color {
     color: #ff4747;
@@ -205,5 +237,141 @@ nav ul li a.active{
   @media only screen and (max-width: 450px) {
     .container {
       font-size: 14px;
+      box-shadow: none;
+    }
+    .container h4{
+      text-align: center;
     }
   }
+
+  footer{
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: auto;
+    box-sizing: border-box;
+    color: white;
+    
+  }
+  .footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    background: #352727;
+  }
+  .footer-content h3{
+    padding-top: 20px;
+    font-size: 2.1rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    line-height: 3rem;
+    color: white;
+  }
+  .footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+    color: white;
+  }
+  .socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+  }
+  .socials li{
+    margin: 0 10px;
+  }
+  .socials a{
+    text-decoration: none;
+    color: white;
+    border: 1.1px solid white;
+    padding: 5px;
+    border-radius: 50%;
+  
+  }
+  .socials a i{
+    font-size: 1.1rem;
+    width: 20px;
+    transition: color .4s ease;
+  
+  }
+  .socials a:hover i{
+    color: #FF6767;
+  }
+  
+  .footer-bottom{
+    background: #4a3636;
+    padding: 20px;
+    padding-bottom: 40px;
+    text-align: center;
+  }
+  .footer-bottom p{
+  float: left;
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+  }
+  .footer-bottom p a{
+  color:white;
+  font-size: 14px;
+  text-decoration: none;
+  }
+  .footer-bottom span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+  }
+  .footer-menu{
+  float: right;
+  
+  }
+  .footer-menu ul{
+  display: flex;
+  }
+  .footer-menu ul li{
+  padding-right: 10px;
+  display: block;
+  }
+  .footer-menu ul li a{
+  font-size: 13px;  
+  color: white;
+  text-decoration: none;
+  }
+  .footer-menu ul li a:hover{
+  color: #FF6767;
+  }
+  
+  @media (max-width:500px) {
+  .footer-menu ul{
+  display: flex;
+  }
+  
+  .footer-bottom p{
+    float:none;
+    text-align: center;
+  }
+  .footer-menu{
+    float:none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 10px;
+  }
+  .content h2 {
+    color: #fff;
+    font-size: 3em;
+    position: absolute;
+    transform: translate(-50%, -50%);
+  }
+  
+  }
+  
+  
