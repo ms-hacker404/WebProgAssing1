@@ -136,6 +136,7 @@
 
 .containersub {
 	display: flex;
+  min-height: 65vh;
 	background: white;
 	padding: 100px;
 	align-items: center;
@@ -149,7 +150,7 @@
 
 .content h2 {
 	color: #fff;
-	font-size: 5em;
+	font-size: 6em;
 	position: absolute;
 	transform: translate(-50%, -50%);
 }
@@ -206,6 +207,7 @@ footer{
   
 }
 .footer-content{
+  padding: 5px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -316,12 +318,12 @@ display: flex;
   text-align: center;
   padding-bottom: 10px;
 }
-
 .content h2 {
 	color: #fff;
 	font-size: 3em;
 	position: absolute;
 	transform: translate(-50%, -50%);
 }
+
 }
 
