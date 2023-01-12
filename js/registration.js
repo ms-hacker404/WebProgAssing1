@@ -266,9 +266,5 @@ passwordInput.addEventListener("input", () => {
 
 //Submit button
 submitButton.addEventListener("click", () => {
-  if (validClasses.length == 6 && invalidClasses.length == 0) {
-    alert("Success");
-  } else {
-    alert("Error");
-  }
+  return true
 });
