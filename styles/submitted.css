@@ -13,6 +13,28 @@
     align-items: center;
     
   }
+  .nav-button{
+    background-color: #FF6767;
+    color: #fff;
+    border: none;
+    padding: 15px 25px;
+    border-radius: 24px;
+    cursor: pointer;
+    font-weight: 550;
+    font-size: 15px;
+    box-shadow: gray 0 2px 2px 0;
+  }
+  nav ul li button a{
+    text-decoration: none;
+    color:#fff;
+  }
+  nav ul li .nav-button:hover{
+    background-color: #4a3636;
+    font-weight: 600;
+  }
+  nav ul li button a:hover{
+    color:#FF6767;
+  }
   .logo{
     width: 50px;
     margin: 10px 0;

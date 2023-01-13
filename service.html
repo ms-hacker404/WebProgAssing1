@@ -23,7 +23,7 @@
                   <li><a href="service.html" class="active">Services</a></li>
                   <li><a href="#">Meal Planner</a></li>
                   <li><a href="contact.html">Contact Us</a></li>
-                  <li><a href="registration.html">Register Now</a></li>
+                  <li><button class = "nav-button"><a href="registration.html">Register Now</a></button></li>
               </ul>
           </nav>
             
@@ -97,7 +97,7 @@
 
           <!-- meditation man -->
         <section>
-            <div class="section2">
+            <div class="section2" id = "section2">
                 <div class="text2">
                     <h3>Breath in, Breath out, Repeat! </h3>
                     <p>Just Sit. Easy enough, right? For a moment, just be still, close your eyes and breathe. Sway with the breeze. Let the distractions of the day fade away.
@@ -121,14 +121,18 @@
           Stretching
         ----------------------->
         <section>
-            <div class="bg2">
+            <div class="bg2" id = "stretching">
             <div class="row2">
                 <div class="stretching-right">
                     <div class="yoga-videos">
                         <div class="video1">
+                            <!-- can also do using iframe but the video that we want to display doesn't have a direct link, we need to open the link in the broswer for it to work
+
                             <iframe width="343" height="608"
                             src="https://vod-progressive.akamaized.net/exp=1673548972~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F4996%2F16%2F424984136%2F1840392327.mp4~hmac=520473b07cb1665d063e68298443eafe289c4b62325e7ba7729ef8554d71d182/vimeo-prod-skyfire-std-us/01/4996/16/424984136/1840392327.mp4">
-                            </iframe>
+                            </iframe>-->
+                            <video controls width="343" height="608" autoplay muted loop>
+                              <source src="videos/stretching.mp4" type="video/mp4">
                         </div>
                     </div>
                   </div>
