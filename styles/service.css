@@ -383,8 +383,8 @@ nav ul li a.active{
     display: flex;
     align-items: center;
     transform: translateY(-10%);
-    animation: floater 15.5s infinite;
-    transition: ease 2.5s;
+    animation: floater 10.5s infinite;
+    transition: ease 1.5s;
   }
   
   
