@@ -105,8 +105,8 @@ const lastnameVerify = (lname) => {
 //Password Verification
 const passwordVerify = (password) => {
   const regex =
-    /^(?=.+[(a-z)(A-Z)])(?=.+[0-9])(?=.+[\$\%\^\&\!@\#\*\(\)\+\=`~\?\>\<])/;
-  return regex.test(password) && password.length >= 6;
+    /^(?=.*?[A-Za-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{6,}/;
+  return regex.test(password);
 };
 
 //Text verification (if input contains only text)
