@@ -117,7 +117,7 @@ const textVerify = (text) => {
 
 //Phone number verification
 const phoneVerify = (number) => {
-  const regex = /^4[0-9]{9}$/;
+  const regex = /^4[0-9]{8}$/;
   return regex.test(number);
 };
 
