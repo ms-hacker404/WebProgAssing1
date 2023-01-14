@@ -11,6 +11,9 @@
   overflow: hidden;
 }
 
+/**********************
+    Navigation bar
+***********************/
 .topnav{
   width: 100%;
   display: flex;
@@ -70,69 +73,11 @@ nav ul li a:hover{
 nav ul li a.active{
   border-bottom: #FF6767 solid 2px;
 }
-.row{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  min-height: 70vh;
-}
-.row .main a{
-  text-decoration: none;
-  color: white;
-  font-weight: 550;
-  font-size: 15px;
-}
-.row .main a:hover{
-  text-decoration: none;
-  color: #FF6767;
-  font-weight: 600;
-  font-size: 15px;
-}
-.main{
-  flex-basis: 50%;
-  position: relative;
-  margin-left: 50px;
-}
-.main h3{
-  font-size: 45px;
-}
-.main .para1{
-  font-size: 22px;
-  padding-top: 20px;
-}
-.main .para2{
-  font-size: 22px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-.main button{
-  background-color: #FF6767;
-  color: #fff;
-  border: none;
-  padding: 15px 35px;
-  border-radius: 24px;
-  cursor: pointer;
-  font-weight: 550;
-  font-size: 15px;
-  box-shadow: gray 0 2px 2px 0;
-}
-.main button:hover{
-  background-color: #352727;
-  color: #FF6767;
-  font-weight: 600;
-  box-shadow: gray 0 2px 2px 0;
-  padding: 15px 35px;
-}
-.right{
-  position: relative;
-  flex-basis: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.right .mainImg{
-  width: 75%;
-}
+
+/**********************
+  nav bar responsive
+***********************/
+
 @media screen and (max-width: 600px) {
   nav ul {
     display: none;
@@ -215,6 +160,79 @@ nav ul li a.active{
   right: 35px;
   }
 }
+
+
+/**********************
+    Main section 
+***********************/
+.row{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 70vh;
+}
+.row .main a{
+  text-decoration: none;
+  color: white;
+  font-weight: 550;
+  font-size: 15px;
+}
+.row .main a:hover{
+  text-decoration: none;
+  color: #FF6767;
+  font-weight: 600;
+  font-size: 15px;
+}
+.main{
+  flex-basis: 50%;
+  position: relative;
+  margin-left: 50px;
+}
+.main h3{
+  font-size: 45px;
+}
+.main .para1{
+  font-size: 22px;
+  padding-top: 20px;
+}
+.main .para2{
+  font-size: 22px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.main button{
+  background-color: #FF6767;
+  color: #fff;
+  border: none;
+  padding: 15px 35px;
+  border-radius: 24px;
+  cursor: pointer;
+  font-weight: 550;
+  font-size: 15px;
+  box-shadow: gray 0 2px 2px 0;
+}
+.main button:hover{
+  background-color: #352727;
+  color: #FF6767;
+  font-weight: 600;
+  box-shadow: gray 0 2px 2px 0;
+  padding: 15px 35px;
+}
+.right{
+  position: relative;
+  flex-basis: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.right .mainImg{
+  width: 75%;
+}
+
+/*************************
+  main section responsive
+*************************/
+
 @media only screen and (max-width: 800px) {
   /* For mobile phones: */
   .row{
@@ -247,7 +265,9 @@ nav ul li a.active{
 }
 
 
-/*----------------------------*/
+/*************************
+downward arrow animation
+*************************/
 
 html {
   scroll-behavior: smooth;
@@ -319,7 +339,9 @@ html {
 
 
 
-/*------------------------------------*/
+/*---------------------------
+prototype section - different devices
+---------------------------------*/
 .section2{
   display: flex;
   justify-content: space-between;
@@ -358,6 +380,9 @@ html {
   
   
 }
+/*--------------------------------
+prototype section responsiveness
+---------------------------------*/
 @media only screen and (max-width: 800px) {
   /* For mobile phones: */
   .section2{
@@ -391,7 +416,9 @@ html {
 }
 
 
-/*--------------------------------*/
+/******************************
+
+*******************************/
 .swicontainer{
   padding: 40px 0;
   
@@ -475,7 +502,9 @@ html {
   
 }
 
-/*--------------------------------*/
+/*********************
+    slider section
+**********************/
 .sumcontainer{
   padding: 40px 0;
 }
@@ -537,6 +566,10 @@ html {
     box-sizing: border-box;
     overflow: hidden;
   }
+
+  /*********************
+    Slider responsive
+  **********************/
   @media screen and (max-width: 768px) {
     .sumBrief{
       padding:25px;
@@ -549,6 +582,10 @@ html {
       font-size: 30px;
     }
 }
+
+/****************
+  FOOTER
+****************/
 
 footer{
   position: relative;
@@ -653,6 +690,10 @@ text-decoration: none;
 .footer-menu ul li a:hover{
 color: #FF6767;
 }
+
+/******************
+  footer responsive
+*******************/
 
 @media (max-width:500px) {
 .footer-menu ul{
