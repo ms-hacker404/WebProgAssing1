@@ -169,7 +169,7 @@ for (let i = 0; i < (length - 1); i++) {
   }
   const calorie_count = `<div class = "count">That's ${count} calories for today, for a better you tomorrow!</div>`
   results.innerHTML += calorie_count
-  results.innerHTML += `<button class = "button" onclick="window.print()">Print this page</button>`
+  results.innerHTML += `<button class = "button" onclick="window.print()">Print Planner</button>`
   
   return false
 }
