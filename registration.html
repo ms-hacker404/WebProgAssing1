@@ -16,7 +16,7 @@
         <!-- navigation panel with logo and other nav bar options-->
             <header>
                 <div class="topnav" id="myTopnav">
-                    <img src = "images/logo.png" class = "logo">
+                    <a href = "index.html"><img src = "images/logo.png" class = "logo"></a>
                     <nav>
                     <ul>
                         <li><a href="index.html" class="active">Home</a></li>
@@ -102,7 +102,7 @@
                 <label>Phone <span class="required-color">*</span></label>
                 <span class = "ext">+61</span><input
                   type="text"
-                  placeholder="Enter Phone Number"
+                  placeholder="Enter Phone Number starting with 4"
                   id="phone"
                   required/>
                 <span id="phone-error" class="hide required-color error-message">Phone Number should start with 4 and have 9 other digits</span>
@@ -168,7 +168,7 @@
                 <label>Password <span class="required-color">*</span></label>
                 <input
                   type="password"
-                  placeholder="Enter Password - Min. 6 chars, must contain at least a number & a letter"
+                  placeholder="Enter Password - Min. 6 chars, must contain at least a number, a letter, & a special char"
                   id="password"
                   required/>
                 <span id="password-error" class="hide required-color error-message">Passwords Should Have at least 6 characters total, including at least 1 number and 1 letter</span>
