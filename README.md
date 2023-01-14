@@ -4,6 +4,8 @@ Submitted by :
 - Maansi Arora (s3885529)
 - Janhvi Anil Tiwari (s3874546)
 
+Link to the hosted website: 
+
 The following website is responsive - desktop (1400px) and mobile (375px).
 
 Reference to the media files:

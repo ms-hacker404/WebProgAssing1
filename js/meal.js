@@ -1,3 +1,4 @@
+//check for navigation bar
 function myFunction() {
     var x = document.getElementById("myTopnav");
     if (x.className === "topnav") {
@@ -15,12 +16,12 @@ function myFunction() {
   }
 
   function calcCal () {
-    // (A) Get elements
+    // Get elements
     let calorie = parseInt(document.getElementById("calorie").value),
     results = document.getElementById("calorie-results");
 
 
-
+// making a dummy list of food items to be chosen from
 var food = {
     "Acai Bowl with Fruits" : 250,
     "Masala Omlette" : 212,
@@ -41,41 +42,47 @@ var food = {
     "Prezel" : 150,
 }
 
-
+// getting the length of the food list
 var length = Object.keys(food).length
 var count = 0
 
+// creating an empty list to store chosen food items according to the calorie count
 var food_list = [{}]
 
+// for loop across the length of the food list
 for (let i = 0; i < (length - 1); i++) { 
 
+    //giving a 50 calorie range 
     if (calorie - count >= 50){
-
+        //choosing random index for a recipe
         let index = Math.floor(Math.random() * 8)
         console.log(index)
 
+        //getting the food item at that generated index
         var chosen_food = Object.keys(food)[index]    
+        // getting the value to the key
         var chosen_food_value = food[chosen_food]
 
+        //adding it to the final list is the different between the chosen food and the remaining calories is less that 50
         if (chosen_food_value - (calorie-count)<=50){
+            //appending the list
             food_list.push({key: chosen_food, value: food[chosen_food]});
+            //increamenting the counter
             count = count + chosen_food_value
         }
     }
     
 }
-
-
-  
-  
+  // removing the first empty element of the list
   food_list = food_list.slice(1)
   console.log(food_list)
   //results.innerHTML = JSON.stringify(food_list)
   results.innerHTML = ''
+
   for (let j = 0; j < food_list.length; j++){
     const food_item = food_list[j]
-
-   
+    
+    // displaying the content on the screen
     const food_key = `<div class = "food-key">${food_item.key}</div>`
     const food_values = `<div  class = "food-value">${food_item.value} \xa0 <span> Calories</span></div>`
     //results.appendChild(element)

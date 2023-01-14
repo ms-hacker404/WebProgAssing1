@@ -1,3 +1,4 @@
+//check for navigation bar
 function myFunction() {
     var x = document.getElementById("myTopnav");
     if (x.className === "topnav") {
@@ -14,20 +15,22 @@ function myFunction() {
     document.getElementById("myNav").style.width = "0%";
   }
 
+
 const yearSelect = document.getElementById("birthyear");
 function populateYears(){
   //Get the current year as a number
   let year = new Date().getFullYear();
-  //Make the previous 100 years be an option
+  //Make the previous 111 years be an option from 2023 - 1913
   for(let i = 0; i < 111; i++){
       const option = document.createElement("option");
       option.textContent = year - i;
       yearSelect.appendChild(option);
   }
 }
-
+//calling the function
 populateYears();
 
+//changing the year on display when selected
 yearSelect.onchange = function() {
   populateDays(yearSelect.value);
 }
@@ -35,7 +38,7 @@ let emptyBirthyearError = document.getElementById("empty-birthyear");
 let limitBirthyearError = document.getElementById("limit-birthyear")
 
 
-  //First Name
+//First Name
 let firstNameInput = document.getElementById("first-name-input");
 let firstNameError = document.getElementById("first-name-error");
 let emptyFirstNameError = document.getElementById("empty-first-name");
@@ -57,16 +60,16 @@ let emailInput = document.getElementById("email");
 let emailError = document.getElementById("email-error");
 let emptyEmailError = document.getElementById("empty-email");
 
-//verify email
+//Verify email
 let verifyEmailInput = document.getElementById("verify-email");
 let verifyEmailError = document.getElementById("verify-email-error");
 let emptyVerifyEmailError = document.getElementById("empty-verify-password");
 
-//radio buttons - student status
+//Radio buttons - student status
 let studentStatus = document.querySelector('input[name="studentStatus"]:checked')  
 let studentStatusError = document.getElementById("student-status-error")
 
-// radio buttons - employement status
+// Radio buttons - employement status
 let employmentStatus = document.querySelector('input[name="employmentStatus"]:checked')  
 let employmentStatusError = document.getElementById("employment-status-error")
 
@@ -95,7 +98,7 @@ const firstnameVerify = (name) => {
     return regex.test(name);
 };
 
-//first name verification
+//last name verification
 const lastnameVerify = (lname) => {
     const regex =
       /^[A-Z][a-z]$/;
@@ -127,7 +130,7 @@ const emailVerify = (input) => {
   return regex.test(input);
 };
 
-//For empty input - accepts(input,empty error for that input and other errors)
+//For empty input - accepts(input, empty error for that input and other errors)
 const emptyUpdate = (
   inputReference,
   emptyErrorReference,
@@ -262,7 +265,6 @@ passwordInput.addEventListener("input", () => {
     emptyUpdate(passwordInput, emptyPasswordError, passwordError);
   }
 });
-
 
 //Submit button
 submitButton.addEventListener("click", () => {

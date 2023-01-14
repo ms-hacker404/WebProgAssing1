@@ -1,3 +1,4 @@
+//check for navigation bar
 function myFunction() {
   var x = document.getElementById("myTopnav");
   if (x.className === "topnav") {
@@ -14,6 +15,7 @@ function closeNav() {
   document.getElementById("myNav").style.width = "0%";
 }
 
+// home page slide show on mobile view - responsive component
 var swiper = new Swiper(".slide-container", {
   slidesPerView: 4,
   spaceBetween: 25,
@@ -43,7 +45,7 @@ var swiper = new Swiper(".slide-container", {
   },
 });
 
-
+// slide show for the summary section
 var swiper = new Swiper(".slide-sum", {
   slidesPerView: 5,
   spaceBetween: 0,
